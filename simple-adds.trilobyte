@@ -1,0 +1,11 @@
+; First Test Program to develop my control logic, microcode and assembly
+start:
+    xor a, a
+main:
+    inc a
+    mov c, a
+    add a, c
+    mov sp, a ;just b/c this module has leds
+    jc main
+end:
+    jp end
